@@ -7,6 +7,7 @@
             <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
                 <Label Text="Inicio de sesión" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
             </Frame>
+            <Image Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" HeightRequest="400" HorizontalOptions="StartAndExpand"/>
             <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario"/>
             <Entry x:Name="txtContrasenia" IsPassword="true" Placeholder="Ingrese la contrasenia"/>
             <Button x:Name="btnLogin" Text="Login" Clicked="btnLogin_Clicked"/>
