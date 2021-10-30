@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrancoExamen.Login">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Inicio de sesión" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Entry x:Name="txtUsuario" Placeholder="Ingrese el usuario"/>
+            <Entry x:Name="txtContrasenia" IsPassword="true" Placeholder="Ingrese la contrasenia"/>
+            <Button x:Name="btnLogin" Text="Login" Clicked="btnLogin_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FrancoExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
+                <Label Text="Resumen" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            </Frame>
+            <Grid RowSpacing="30" ColumnSpacing="30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" x:Name="lblUsuario" />
+
+                <Label Grid.Row="1" Grid.Column="0" Text="Nombre del estudiante" FontSize="20" />
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="lblestudiante"/>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Total a pagar" FontSize="20" />
+                <Entry Grid.Row="2" Grid.Column="1" x:Name="txtTotal" Keyboard="Numeric" />
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
